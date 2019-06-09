@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'pages/css/all.css' %}">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'pages/css/bootstrap.css' %}">
+    <!-- Custom -->
+    <link rel="stylesheet" href="{% static 'pages/css/style.css' %}">
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="{% static 'pages/css/lightbox.min.css' %}">
+    <title>TEST Real Estate</title>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    {% include 'partials/_topbar.html' %}
+    <!-- Nav Bar -->
+    {% include 'partials/_navbar.html' %}
+    <!-- Main Content -->
+    {% block content %} {% endblock %}
+    <!-- Footer -->
+    {% include 'partials/_footer.html' %}
+</body>
+<script src="{% static 'pages/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'pages/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'pages/js/lightbox.min.js' %}"></script>
+<script src="{% static 'pages/js/main.js' %}"></script>
+
+</html>
