@@ -1,0 +1,11 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block branding %}
+<h1 id="head">
+    <img src="{% static 'pages/img/logo2.png' %}" height="50" width="75" class="brand_img"> TEST Real Estate Sp. z o.o. Admin Panel
+</h1>
+{% endblock %}
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'pages/css/admin.css' %}">
+{% endblock %}

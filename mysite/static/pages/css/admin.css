@@ -1,0 +1,30 @@
+#header {
+    height: 50px;
+    background: #e03400;
+    color: #fff;
+}
+
+#branding h1 {
+    color:white;
+    font-weight: 500;
+}
+
+div.breadcrumbs {
+    background: #e03400;
+    padding: 10px 50px;
+    font-size: 18px;
+    color: #283e60;
+}
+
+div.breadcrumbs a {
+    color: #333;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: #e03400;
+    font-size: 18px;
+}
+
+td, th {
+    font-size: 16px;
+}

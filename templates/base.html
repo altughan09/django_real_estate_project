@@ -5,8 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Property information you can trust. Search for hundreds of properties in Poland, and get detailed and up to date information quickly.">
+    <meta name="keywords"
+        content="Property report, real estate record, homes for sale, buying or selling, largest real estate database, Poland real estate market">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Font Awesome -->
+    <title>AO Real Estate {% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="{%  static 'pages/favicon/favicon.ico' %}">
+        <!-- Font Awesome -->
     <link rel="stylesheet" href="{% static 'pages/css/all.css' %}">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="{% static 'pages/css/bootstrap.css' %}">
@@ -14,7 +20,33 @@
     <link rel="stylesheet" href="{% static 'pages/css/style.css' %}">
     <!-- Lightbox -->
     <link rel="stylesheet" href="{% static 'pages/css/lightbox.min.css' %}">
-    <title>TEST Real Estate</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700&display=swap" rel="stylesheet">
+    <!-- Cookie consent -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#e03400",
+                        "text": "#ffffff",
+                    },
+                    "button": {
+                        "background": "transparent",
+                        "text": "#f5d948",
+                        "border": "#f5d948"
+                    }
+                },
+                "content": {
+                    "message": "Our website uses cookies to ensure you get the best experience on our website.",
+                    "href": ""
+                }
+            })
+        });
+    </script>
 </head>
 
 <body>
