@@ -97,18 +97,18 @@ img {
 
 
 
-  input[type=checkbox]
-  {
+input[type=checkbox]
+{
     -ms-transform: scale(1.5);
     -moz-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     -o-transform: scale(1.5);
     padding: 10px;
-  }
+}
 
-  label{
+label{
     font-size: 12px;
-  }
+}
     
 .select2-container--default .select2-selection--single {
     height: 48px !important;
@@ -120,6 +120,19 @@ img {
 
 .select2-selection__arrow {
   margin: 10px;
+}
+
+#loading {
+  background-image: url("../img/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: #fff; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999999;
 }
 
 @media (max-width: 991px) {

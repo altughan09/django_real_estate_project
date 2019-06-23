@@ -23,11 +23,10 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700&display=swap" rel="stylesheet">
     <!-- Select2 -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+    <link href="{% static 'pages/css/select2.min.css' %}" rel="stylesheet" />
     <!-- Cookie consent -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'pages/css/cookieconsent.min.css' %}" />
+    <script src="{% static 'pages/js/cookieconsent.min.js' %}"></script>
     <script>
         window.addEventListener("load", function () {
             window.cookieconsent.initialise({
@@ -52,6 +51,7 @@
 </head>
 
 <body>
+    <div id="loading"></div>
     <!-- Top Bar -->
     {% include 'partials/_topbar.html' %}
     <!-- Nav Bar -->
@@ -64,13 +64,6 @@
 <script src="{% static 'pages/js/jquery-3.3.1.min.js' %}"></script>
 <script src="{% static 'pages/js/bootstrap.bundle.min.js' %}"></script>
 <script src="{% static 'pages/js/lightbox.min.js' %}"></script>
+<script src="{% static 'pages/js/select2.min.js' %}"></script>
 <script src="{% static 'pages/js/main.js' %}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('#selector').select2({
-            placeholder: "City (All)",
-        });
-    });
-</script>
 </html>
