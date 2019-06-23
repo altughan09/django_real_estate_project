@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AO Real Estate {% block title %}{% endblock %}</title>
     <link rel="shortcut icon" href="{%  static 'pages/favicon/favicon.ico' %}">
-        <!-- Font Awesome -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="{% static 'pages/css/all.css' %}">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="{% static 'pages/css/bootstrap.css' %}">
@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="{% static 'pages/css/lightbox.min.css' %}">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700&display=swap" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
     <!-- Cookie consent -->
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
@@ -63,5 +65,12 @@
 <script src="{% static 'pages/js/bootstrap.bundle.min.js' %}"></script>
 <script src="{% static 'pages/js/lightbox.min.js' %}"></script>
 <script src="{% static 'pages/js/main.js' %}"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#selector').select2({
+            placeholder: "City (All)",
+        });
+    });
+</script>
 </html>

@@ -110,6 +110,17 @@ img {
     font-size: 12px;
   }
     
+.select2-container--default .select2-selection--single {
+    height: 48px !important;
+    text-align: left;
+}
+.select2-selection__rendered {
+  margin: 10px;
+}
+
+.select2-selection__arrow {
+  margin: 10px;
+}
 
 @media (max-width: 991px) {
   #showcase {

@@ -17,6 +17,29 @@ state_choices = {
     'Western-Pomeranian': 'Western-Pomeranian'
 }
 
+city_choices = {
+    'Warsaw' : 'Warsaw',
+    'Krakow': 'Krakow',
+    'Lodz': 'Lodz',
+    'Wroclaw': 'Wroclaw',
+    'Poznan': 'Poznan',
+    'Gdansk': 'Gdansk',
+    'Szczecin': 'Szczecin',
+    'Bydgoszcz': 'Bydgoszcz',
+    'Lublin': 'Lublin',
+    'Katowice': 'Katowice',
+    'Bialystok': 'Bialystok',
+    'Gdynia': 'Gdynia',
+    'Czestochowa': 'Czestochowa',
+    'Radom': 'Radom',
+    'Rzeszow': 'Rzeszow',
+    'Torun': 'Torun',
+    'Kielce': 'Kielce',
+    'Gliwice': 'Gliwice',
+    'Zabrze': 'Zabrze',
+    'Bytom': 'Bytom',
+}
+
 price_choices = {
     "100000": '100,000 zł',
     "200000": '200,000 zł',
